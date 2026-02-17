@@ -11,7 +11,7 @@ import pytest
 
 class TestLogin(BaseTest):
 
-    @pytest.mark.parametrize("email, password", ExcelUtilities.get_data("practice/excel_file/Python_course.xlsx","Hoja1"))
+    @pytest.mark.parametrize("email, password", ExcelUtilities.get_data("karencita/practice/excel_file/Python_course.xlsx", "Hoja1"))
     def test_login_with_valid_credentials(self, email, password):
         self.driver.find_element(By.XPATH, "//span[text()='My Account']").click()
         self.driver.find_element(By.XPATH, "//a[normalize-space()='Login']").click()
