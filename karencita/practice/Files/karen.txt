@@ -1,0 +1,4 @@
+Hello Karen, welcome to the world of Python programming!
+ Hola KarencitaHello Karen, welcome to the world of Python programming!
+ Hola Karencita
+ This is an appended line.

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="3" time="0.091" timestamp="2026-01-28T17:28:06.268784-05:00" hostname="DESKTOP-POC773O"><testcase classname="SamplePackage.Test_SampleFile" name="test_sample_one" time="0.001"><failure message="AssertionError: Values are not equal&#10;assert 5 == 10">def test_sample_one():
+        a = 5
+        b = 10
+&gt;       assert a == b, "Values are not equal"
+E       AssertionError: Values are not equal
+E       assert 5 == 10
+
+SamplePackage\Test_SampleFile.py:4: AssertionError</failure></testcase><testcase classname="SamplePackage.Test_SampleFile" name="test_sample_two" time="0.001" /><testcase classname="SamplePackage.Test_SampleFile" name="test_sample_three" time="0.001"><failure message="AssertionError: Strings are not equal&#10;assert False&#10; +  where False = &lt;method-wrapper '__eq__' of str object at 0x0000022D8C1667F0&gt;('Bye')&#10; +    where &lt;method-wrapper '__eq__' of str object at 0x0000022D8C1667F0&gt; = 'hello'.__eq__">def test_sample_three():
+        a = "hello"
+        b = "Bye"
+&gt;       assert a.__eq__(b), "Strings are not equal"
+E       AssertionError: Strings are not equal
+E       assert False
+E        +  where False = &lt;method-wrapper '__eq__' of str object at 0x0000022D8C1667F0&gt;('Bye')
+E        +    where &lt;method-wrapper '__eq__' of str object at 0x0000022D8C1667F0&gt; = 'hello'.__eq__
+
+SamplePackage\Test_SampleFile.py:14: AssertionError</failure></testcase></testsuite></testsuites>
